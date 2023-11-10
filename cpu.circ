@@ -604,6 +604,41 @@ end TCL_Generic;
     <a name="circuitnamedbox" val="true"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="circuitvhdlpath" val=""/>
+    <appear>
+      <circ-port height="8" pin="1530,780" width="8" x="276" y="466"/>
+      <circ-port height="8" pin="150,760" width="8" x="316" y="466"/>
+      <circ-port height="8" pin="190,590" width="8" x="146" y="316"/>
+      <circ-port height="8" pin="1530,490" width="8" x="236" y="466"/>
+      <circ-port height="8" pin="160,480" width="8" x="176" y="466"/>
+      <circ-port height="8" pin="160,440" width="8" x="146" y="416"/>
+      <circ-port height="8" pin="160,400" width="8" x="206" y="466"/>
+      <circ-port height="10" pin="1080,1200" width="10" x="345" y="315"/>
+      <circ-port height="10" pin="1200,1200" width="10" x="345" y="405"/>
+      <rect fill="#ffffff" height="173" stroke="#000000" stroke-width="3" width="173" x="162" y="280"/>
+      <text font-family="SansSerif" font-size="22" text-anchor="middle" x="246" y="360">Register</text>
+      <text font-family="SansSerif" font-size="22" text-anchor="middle" x="247" y="393">File</text>
+      <polyline fill="none" points="163,407 189,420" stroke="#000000" stroke-width="3"/>
+      <polyline fill="none" points="188,421 162,429" stroke="#000000" stroke-width="3"/>
+      <polyline fill="none" points="180,471 180,454" stroke="#000000" stroke-width="3"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="179" y="450">WE</text>
+      <polyline fill="none" points="151,420 161,420" stroke="#000000" stroke-width="3"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="203" y="423">clk</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="240" y="447">rs1</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="279" y="447">rs2</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="320" y="447">rd</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="210" y="446">r</text>
+      <polyline fill="none" points="210,453 210,471" stroke="#000000" stroke-width="3"/>
+      <polyline fill="none" points="240,470 240,453" stroke="#000000" stroke-width="3"/>
+      <polyline fill="none" points="280,470 280,453" stroke="#000000" stroke-width="3"/>
+      <polyline fill="none" points="320,470 320,453" stroke="#000000" stroke-width="3"/>
+      <polyline fill="none" points="151,320 161,320" stroke="#000000" stroke-width="3"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="183" y="324">rdval</text>
+      <polyline fill="none" points="337,320 347,320" stroke="#000000" stroke-width="3"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="307" y="325">r1val</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="307" y="414">s2val</text>
+      <polyline fill="none" points="337,410 347,410" stroke="#000000" stroke-width="3"/>
+      <circ-anchor facing="east" height="6" width="6" x="347" y="317"/>
+    </appear>
     <wire from="(1380,740)" to="(1380,760)"/>
     <wire from="(1380,700)" to="(1380,720)"/>
     <wire from="(250,920)" to="(500,920)"/>
