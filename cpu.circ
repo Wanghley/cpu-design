@@ -7,10 +7,10 @@
       <a name="facing" val="north"/>
     </tool>
     <tool name="Probe">
-      <a name="facing" val="south"/>
+      <a name="facing" val="north"/>
     </tool>
     <tool name="Tunnel">
-      <a name="facing" val="south"/>
+      <a name="facing" val="north"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1"/>
@@ -264,7 +264,6 @@ end TCL_Generic;
     <wire from="(1180,450)" to="(1360,450)"/>
     <wire from="(1340,1440)" to="(1340,1450)"/>
     <wire from="(800,450)" to="(820,450)"/>
-    <wire from="(740,1080)" to="(890,1080)"/>
     <wire from="(1520,1540)" to="(1520,1590)"/>
     <wire from="(1700,1480)" to="(1700,1540)"/>
     <wire from="(1280,1540)" to="(1280,1590)"/>
@@ -322,6 +321,7 @@ end TCL_Generic;
     <wire from="(2370,840)" to="(2370,860)"/>
     <wire from="(960,1450)" to="(1090,1450)"/>
     <wire from="(1240,930)" to="(1270,930)"/>
+    <wire from="(740,1080)" to="(810,1080)"/>
     <wire from="(270,60)" to="(280,60)"/>
     <wire from="(2020,1640)" to="(2040,1640)"/>
     <wire from="(980,1050)" to="(980,1110)"/>
@@ -341,6 +341,7 @@ end TCL_Generic;
     <wire from="(1680,790)" to="(1680,880)"/>
     <wire from="(1810,1210)" to="(1810,1240)"/>
     <wire from="(1010,1130)" to="(1010,1140)"/>
+    <wire from="(580,220)" to="(630,220)"/>
     <wire from="(1270,910)" to="(1270,930)"/>
     <wire from="(870,670)" to="(870,680)"/>
     <wire from="(650,210)" to="(700,210)"/>
@@ -403,6 +404,7 @@ end TCL_Generic;
     <wire from="(470,640)" to="(470,690)"/>
     <wire from="(1530,1370)" to="(1740,1370)"/>
     <wire from="(1570,640)" to="(1600,640)"/>
+    <wire from="(810,1080)" to="(890,1080)"/>
     <wire from="(810,320)" to="(1080,320)"/>
     <wire from="(1150,430)" to="(1360,430)"/>
     <wire from="(900,670)" to="(900,720)"/>
@@ -453,6 +455,7 @@ end TCL_Generic;
     <wire from="(1850,1620)" to="(1970,1620)"/>
     <wire from="(960,1440)" to="(1190,1440)"/>
     <wire from="(1940,1440)" to="(1940,1510)"/>
+    <wire from="(810,1080)" to="(810,1100)"/>
     <wire from="(2300,840)" to="(2370,840)"/>
     <wire from="(1110,1060)" to="(1110,1070)"/>
     <wire from="(1790,1290)" to="(1790,1360)"/>
@@ -489,7 +492,7 @@ end TCL_Generic;
       <a name="addrWidth" val="16"/>
       <a name="dataWidth" val="16"/>
       <a name="contents">addr/data: 16 16
-1 10 100 1 0 10 1001 1000
+1 0 1
 </a>
       <a name="labelvisible" val="true"/>
     </comp>
@@ -1146,7 +1149,30 @@ end TCL_Generic;
       <a name="width" val="16"/>
       <a name="label" val="ttydata"/>
     </comp>
-    <comp lib="0" loc="(630,220)" name="Tunnel">
+    <comp lib="0" loc="(740,250)" name="Tunnel">
+      <a name="label" val="reset"/>
+    </comp>
+    <comp lib="0" loc="(720,260)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="outtty"/>
+    </comp>
+    <comp lib="4" loc="(2380,810)" name="RAM">
+      <a name="addrWidth" val="16"/>
+      <a name="dataWidth" val="16"/>
+      <a name="trigger" val="high"/>
+      <a name="databus" val="bibus"/>
+    </comp>
+    <comp loc="(2300,820)" name="memory_latch"/>
+    <comp lib="1" loc="(2060,860)" name="NOT Gate"/>
+    <comp lib="0" loc="(2010,860)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="clk"/>
+    </comp>
+    <comp lib="0" loc="(1970,840)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="DMwe"/>
+    </comp>
+    <comp lib="0" loc="(580,220)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="16"/>
       <a name="label" val="ttydata"/>
@@ -1170,32 +1196,8 @@ end TCL_Generic;
       <a name="bit14" val="none"/>
       <a name="bit15" val="none"/>
     </comp>
-    <comp lib="0" loc="(740,250)" name="Tunnel">
-      <a name="label" val="reset"/>
-    </comp>
-    <comp lib="0" loc="(720,260)" name="Tunnel">
+    <comp lib="0" loc="(810,1100)" name="Probe">
       <a name="facing" val="north"/>
-      <a name="label" val="outtty"/>
-    </comp>
-    <comp lib="0" loc="(820,1110)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="width" val="16"/>
-    </comp>
-    <comp lib="4" loc="(2380,810)" name="RAM">
-      <a name="addrWidth" val="16"/>
-      <a name="dataWidth" val="16"/>
-      <a name="trigger" val="high"/>
-      <a name="databus" val="bibus"/>
-    </comp>
-    <comp loc="(2300,820)" name="memory_latch"/>
-    <comp lib="1" loc="(2060,860)" name="NOT Gate"/>
-    <comp lib="0" loc="(2010,860)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="clk"/>
-    </comp>
-    <comp lib="0" loc="(1970,840)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="DMwe"/>
     </comp>
   </circuit>
   <circuit name="RegisterFile">
