@@ -152,6 +152,7 @@ end TCL_Generic;
     <wire from="(1590,790)" to="(1590,820)"/>
     <wire from="(840,840)" to="(840,850)"/>
     <wire from="(1280,640)" to="(1280,660)"/>
+    <wire from="(330,70)" to="(330,200)"/>
     <wire from="(1300,900)" to="(1400,900)"/>
     <wire from="(2360,870)" to="(2380,870)"/>
     <wire from="(1740,1290)" to="(1740,1370)"/>
@@ -1198,6 +1199,10 @@ end TCL_Generic;
     </comp>
     <comp lib="0" loc="(810,1100)" name="Probe">
       <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(330,200)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="input_kbd"/>
     </comp>
   </circuit>
   <circuit name="RegisterFile">
