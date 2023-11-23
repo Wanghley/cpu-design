@@ -11,7 +11,7 @@
 [![Forks](https://img.shields.io/github/forks/wanghley/cpu-design.svg?style=for-the-badge)](https://github.com/wanghley/wanghley/network/members)
 [![Stargazers](https://img.shields.io/github/stars/wanghley/cpu-design.svg?style=for-the-badge)](https://github.com/wanghley/cpu-design/stargazers)
 [![Issues](https://img.shields.io/github/issues/wanghley/cpu-design.svg?style=for-the-badge)](https://github.com/wanghley/cpu-design/issues)
-[![MIT License](https://img.shields.io/github/license/wanghley/cpu-design.svg?style=for-the-badge)](https://github.com/wanghley/cpu-design/blob/main/LICENSE.txt)
+[![CC BY-NC-SA 4.0 License](https://img.shields.io/github/license/wanghley/cpu-design.svg?style=for-the-badge)](https://github.com/wanghley/cpu-design/blob/main/LICENSE.md)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555)](https://linkedin.com/in/wanghley)
 
 <!-- PROJECT LOGO -->
