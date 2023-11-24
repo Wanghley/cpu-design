@@ -7,7 +7,7 @@
 -->
 
 <!-- PROJECT SHIELDS -->
-[![CERN-OHL-W-2.0 License](https://img.shields.io/github/license/wanghley/cpu-design.svg)](https://github.com/wanghley/cpu-design/blob/main/LICENSE.md)
+[![CERN-OHL-W-2.0 License](https://img.shields.io/github/license/wanghley/cpu-design.svg?style=for-the-badge)](https://github.com/wanghley/cpu-design/blob/main/LICENSE.md)
 [![Contributors](https://img.shields.io/github/contributors/wanghley/cpu-design.svg?style=for-the-badge)](https://github.com/wanghley/cpu-design/graphs/contributors)
 [![Forks](https://img.shields.io/github/forks/wanghley/cpu-design.svg?style=for-the-badge)](https://github.com/wanghley/wanghley/network/members)
 [![Stargazers](https://img.shields.io/github/stars/wanghley/cpu-design.svg?style=for-the-badge)](https://github.com/wanghley/cpu-design/stargazers)
